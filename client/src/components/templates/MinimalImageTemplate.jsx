@@ -58,7 +58,7 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                             {data.personal_info?.email && (
                                 <div className="flex items-center gap-2">
                                     <Mail size={14} style={{ color: accentColor }} />
-                                    <span>{data.personal_info.email}</span>
+                                    <span style={{ wordBreak: 'break-all' }}>{data.personal_info.email}</span>
                                 </div>
                             )}
                             {data.personal_info?.location && (
@@ -79,11 +79,11 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                             {data.personal_info?.linkedin && (
                                 <div className="flex items-center gap-2">
                                     <Link size={14} style={{ color: accentColor }} />
-                                    <span>{data.personal_info.linkedin}</span>
+                                    <span style={{ wordBreak: 'break-all' }}>{data.personal_info.linkedin}</span>
                                 </div>
                             )}
 
-
+                            
                             {/* Website - emoji */}
                             {/* {data.personal_info?.website && (
                                 <div className="flex items-center gap-2">
@@ -95,7 +95,7 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                             {data.personal_info?.website && (
                                 <div className="flex items-center gap-2">
                                     <Globe size={14} style={{ color: accentColor }} />
-                                    <span>{data.personal_info.website}</span>
+                                    <span style={{ wordBreak: 'break-all' }}>{data.personal_info.website}</span>
                                 </div>
                             )}
                         </div>
@@ -225,3 +225,5 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
 }
 
 export default MinimalImageTemplate
+
+
