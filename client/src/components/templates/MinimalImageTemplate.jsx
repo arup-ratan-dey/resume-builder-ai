@@ -52,19 +52,19 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                             {data.personal_info?.phone && (
                                 <div className="flex items-center gap-2">
                                     <Phone size={14} style={{ color: accentColor }} />
-                                    <span>{data.personal_info.phone}</span>
+                                    <span style={{wordBreak:'break-all'}}>{data.personal_info.phone}</span>
                                 </div>
                             )}
                             {data.personal_info?.email && (
                                 <div className="flex items-center gap-2">
                                     <Mail size={14} style={{ color: accentColor }} />
-                                    <span style={{ wordBreak: 'break-all' }}>{data.personal_info.email}</span>
+                                    <span style={{wordBreak:'break-all'}}>{data.personal_info.email}</span>
                                 </div>
                             )}
                             {data.personal_info?.location && (
                                 <div className="flex items-center gap-2">
                                     <MapPin size={14} style={{ color: accentColor }} />
-                                    <span>{data.personal_info.location}</span>
+                                    <span style={{wordBreak:'break-all'}}>{data.personal_info.location}</span>
                                 </div>
                             )}
 
@@ -79,7 +79,7 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                             {data.personal_info?.linkedin && (
                                 <div className="flex items-center gap-2">
                                     <Link size={14} style={{ color: accentColor }} />
-                                    <span style={{ wordBreak: 'break-all' }}>{data.personal_info.linkedin}</span>
+                                    <span style={{wordBreak:'break-all'}}>{data.personal_info.linkedin}</span>
                                 </div>
                             )}
 
@@ -95,7 +95,7 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                             {data.personal_info?.website && (
                                 <div className="flex items-center gap-2">
                                     <Globe size={14} style={{ color: accentColor }} />
-                                    <span style={{ wordBreak: 'break-all' }}>{data.personal_info.website}</span>
+                                    <span style={{wordBreak:'break-all'}}>{data.personal_info.website}</span>
                                 </div>
                             )}
                         </div>
